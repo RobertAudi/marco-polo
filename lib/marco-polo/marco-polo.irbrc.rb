@@ -20,7 +20,7 @@ if rails_env
     rails_env = "prod"
     color = red
   end
-  
+
   IRB.conf[:PROMPT][:RAILS_ENV] = {
       :PROMPT_I => "#{current_app}#{color}(#{rails_env})#{reset} > ",
       :PROMPT_N => "#{current_app}#{color}(#{rails_env})#{reset} > ",
@@ -30,5 +30,4 @@ if rails_env
   }
 
   IRB.conf[:PROMPT_MODE] = :RAILS_ENV
-
 end
